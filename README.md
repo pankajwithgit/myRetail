@@ -65,38 +65,35 @@ GET http://localhost:8080/api/v1/products/12954218
 
 Response:
 
-{
-
-    "id": 12954218,
-    "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
-    "current_price": {
-        "value": 56.13,
-        "currency_code": "USD"
-    }   
-}
+    {
+        "id": 12954218,
+        "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
+        "current_price": {
+            "value": 56.13,
+            "currency_code": "USD"
+        }   
+    }
 
 PUT http://localhost:8080/api/v1/products/12954218
 body:
 
-{
-
-    "id": 12954218,
-    "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
-    "current_price": {
-        "value": 16.13,
-        "currency_code": "USD"
-    }
-}
+        {
+            "id": 12954218,
+            "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
+            "current_price": {
+                "value": 16.13,
+                "currency_code": "USD"
+            }
+        }
 
 Response:
 
-{
-
-    "id": 12954218,
-    "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
-    "current_price": {
-        "value": 16.13,
-        "currency_code": "USD"
+    {
+        "id": 12954218,
+        "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
+        "current_price": {
+            "value": 16.13,
+            "currency_code": "USD"
+        }
     }
-}
 
