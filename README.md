@@ -25,25 +25,27 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 *********************************************************************************************************************************
 ## __Solution:__
 
-### __Tools & Technologies used:__
+### __Tools & Technologies used__
 1. Spring Boot [As application framework, version 2.4.3]: https://spring.io/quickstart
 
-2. Mongodb [as noSql datastore, version 4.4.4] - https://www.mongodb.com/try/download/community
+2. Spring Initializr [for quick bootstrapping] - https://start.spring.io/
 
-3. Maven [as build tool] - https://maven.apache.org/
+3. Mongodb [as noSql datastore, version 4.4.4] - https://www.mongodb.com/try/download/community
 
-4. Mockito [as Unit testing framework] - https://site.mockito.org/
+4. Maven [as build tool] - https://maven.apache.org/
 
-5. Postman [as API testing tool] - https://www.postman.com/
+5. Mockito [as Unit testing framework] - https://site.mockito.org/
 
-6. GitHub [as code repo tool] - https://www.github.com
+6. Postman [as API testing tool] - https://www.postman.com/
 
-7. Java 1.8 [as programming language]
+7. GitHub [as code repo tool] - https://www.github.com
 
-8. Spring Tools Suite 4 (STS) [as IDE] - https://spring.io/tools
+8. Java 1.8 [as programming language] - https://www.java.com/en/download/manual.jsp
 
-### __How to run the project?:__
-1. Install and run MongoDB version 4.4.4 (current as on today) - https://docs.mongodb.com/manual/administration/install-community/
+9. Spring Tools Suite 4 (STS) [as IDE] - https://spring.io/tools
+
+### __How to run the project?__
+1. Install and run MongoDB version 4.4.4 (current as on 03/01/2021) - https://docs.mongodb.com/manual/administration/install-community/
 
 2. Use any IDE (eclipse, IntelliJ, STS etc) and import/clone the git repo - https://github.com/pankajwithgit/myRetail.git
 
@@ -59,7 +61,7 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 
 9. Run the project using 'mvn spring-boot:run' command. Tomcat would be started on 8080 port.
 
-### __Play with APIs:__
+### __Play with APIs__
 
 Get product Details
 
@@ -102,7 +104,7 @@ Update Pricing details of a product
 
 PS: if product id passed in API calls is not available in datastore or in redsky API response, system will throw ProductNotFoundException.
 
-### __Some Screenshots from Postman:__
+### __Some Screenshots from Postman__
 GET http://localhost:8080/api/v1/products/13264003 [with valid product]
 ![Screen Shot 2021-03-02 at 12 14 11 AM (2)](https://user-images.githubusercontent.com/11853379/109601431-ddfabe00-7aec-11eb-8b6c-250401dd2ea3.png)
 
