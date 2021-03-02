@@ -22,3 +22,53 @@ Reads pricing information from a NoSQL data store and combines it with the produ
 
 BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing a JSON request body similar to the GET response, and updates the product’s price in the data store.
 
+*********************************************************************************************************************************
+## __Solution:__
+
+### __Tools & Technologies used:__
+1. Spring Boot [As application framework, version 2.4.3]: https://spring.io/quickstart
+
+2. Mongodb [as noSql datastore, version 4.4.4] - https://www.mongodb.com/try/download/community
+
+3. Maven [as build tool] - https://maven.apache.org/
+
+4. Mockito [as Unit testing framework] - https://site.mockito.org/
+
+5. Postman [as API testing tool] - https://www.postman.com/
+
+6. GitHub [as code repo tool] - https://www.github.com
+
+7. Java 1.8 [as programming language]
+
+8. Spring Tools Suite 4 (STS) [as IDE] - https://spring.io/tools
+
+### __How to run the project?:__
+1. Install MongoDB version 4.4.4 (current as on today) - https://docs.mongodb.com/manual/administration/install-community/
+
+2. Use any IDE (eclipse, IntelliJ, STS etc) and import/clone the git repo - https://github.com/pankajwithgit/myRetail.git
+
+4. Install Java 1.8
+
+5. Install Maven
+
+6. Open terminal, go to project root folder where pom.xml exists.
+
+7. Build the project using 'mvn clean install' command
+
+8. Run the test cases using 'mvn test' command
+
+9. Run the project using 'mvn spring-boot:run' command. Tomcat would be started on 8080 port.
+
+### __Play with APIs:__
+
+GET http://localhost:8080/api/v1/products/12954218
+
+Response:
+{
+    "id": 12954218,
+    "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
+    "current_price": {
+        "value": 56.13,
+        "currency_code": "USD"
+    }
+}
