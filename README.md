@@ -44,6 +44,8 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 
 9. Spring Tools Suite 4 (STS) [as IDE] - https://spring.io/tools
 
+10. Apache Tomcat [as application server, embedded within spring boot app] 
+
 ### __How to run the project?__
 1. Install and run MongoDB version 4.4.4 (current as on 03/01/2021) - https://docs.mongodb.com/manual/administration/install-community/
 
@@ -62,6 +64,7 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 9. Run the project using 'mvn spring-boot:run' command. Tomcat would be started on 8080 port.
 
 ### __Play with APIs__
+Now that server is up and running, we can go to postman and start to play around with APIs.
 
 Get product Details
 
