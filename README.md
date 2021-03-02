@@ -66,12 +66,11 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 ### __Play with APIs__
 Now that server is up and running, we can go to postman and start to play around with APIs.
 
-Get product Details
+Get Product Details
 
     GET http://localhost:8080/api/v1/products/12954218
 
     Response:
-
     {
         "id": 12954218,
         "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
@@ -85,7 +84,7 @@ Update Pricing details of a product
 
     PUT http://localhost:8080/api/v1/products/12954218
 
-    request body:
+    Request Body:
         {
             "id": 12954218,
             "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
