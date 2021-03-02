@@ -43,7 +43,7 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 8. Spring Tools Suite 4 (STS) [as IDE] - https://spring.io/tools
 
 ### __How to run the project?:__
-1. Install MongoDB version 4.4.4 (current as on today) - https://docs.mongodb.com/manual/administration/install-community/
+1. Install and run MongoDB version 4.4.4 (current as on today) - https://docs.mongodb.com/manual/administration/install-community/
 
 2. Use any IDE (eclipse, IntelliJ, STS etc) and import/clone the git repo - https://github.com/pankajwithgit/myRetail.git
 
@@ -64,18 +64,39 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 GET http://localhost:8080/api/v1/products/12954218
 
 Response:
+
 {
 
     "id": 12954218,
-    
     "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
-    
     "current_price": {
-    
         "value": 56.13,
-        
         "currency_code": "USD"
-        
-    }
-    
+    }   
 }
+
+PUT http://localhost:8080/api/v1/products/12954218
+body:
+
+{
+
+    "id": 12954218,
+    "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
+    "current_price": {
+        "value": 16.13,
+        "currency_code": "USD"
+    }
+}
+
+Response:
+
+{
+
+    "id": 12954218,
+    "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
+    "current_price": {
+        "value": 16.13,
+        "currency_code": "USD"
+    }
+}
+
