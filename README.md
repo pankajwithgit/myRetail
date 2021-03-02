@@ -103,13 +103,15 @@ Update Pricing details of a product
 PS: if product id passed in API calls is not available in datastore or in redsky API response, system will throw ProductNotFoundException.
 
 ### __Some Screenshots from Postman:__
-GET: With valid product (http://localhost:8080/api/v1/products/13264003)
+GET http://localhost:8080/api/v1/products/13264003 [with valid product]
 ![Screen Shot 2021-03-02 at 12 14 11 AM (2)](https://user-images.githubusercontent.com/11853379/109601431-ddfabe00-7aec-11eb-8b6c-250401dd2ea3.png)
 
-PUT: With valid product (http://localhost:8080/api/v1/products/12954218)
+
+PUT http://localhost:8080/api/v1/products/12954218) [with valid product]
 ![Screen Shot 2021-03-02 at 12 01 59 AM (2)](https://user-images.githubusercontent.com/11853379/109600939-0afaa100-7aec-11eb-9324-4aa34a3e584c.png)
 
-GET: With invalid product (http://localhost:8080/api/v1/products/13264002)
+
+GET http://localhost:8080/api/v1/products/13264002 [with invalid product]
 ![Screen Shot 2021-03-02 at 12 14 54 AM (2)](https://user-images.githubusercontent.com/11853379/109601498-f965c900-7aec-11eb-8cc0-0168095e3234.png)
 
 
