@@ -61,9 +61,11 @@ BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing
 
 ### __Play with APIs:__
 
-GET http://localhost:8080/api/v1/products/12954218
+Get product Details
 
-Response:
+    GET http://localhost:8080/api/v1/products/12954218
+
+    Response:
 
     {
         "id": 12954218,
@@ -74,9 +76,11 @@ Response:
         }   
     }
 
-PUT http://localhost:8080/api/v1/products/12954218
-body:
+Update Pricing details of a product
 
+    PUT http://localhost:8080/api/v1/products/12954218
+
+    request body:
         {
             "id": 12954218,
             "name": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
@@ -86,7 +90,7 @@ body:
             }
         }
 
-Response:
+    Response:
 
     {
         "id": 12954218,
