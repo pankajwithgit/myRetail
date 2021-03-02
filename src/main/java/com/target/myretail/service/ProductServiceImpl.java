@@ -37,7 +37,7 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public Product getProduct(Long id) throws InterruptedException, ExecutionException {
-		logger.info(String.format("Fetching product details with id: %s", id));
+		logger.debug(String.format("Fetching product details with id: %s", id));
 
 		Future<String> nameFuture = executorService.submit(new Callable<String>() {
 			@Override

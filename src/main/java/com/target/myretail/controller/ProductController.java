@@ -34,7 +34,7 @@ public class ProductController {
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Product> getProduct(@PathVariable(value = "id") long productId) {
-		logger.info("inside getProductDetails " + productId);
+		logger.debug("inside getProductDetails " + productId);
 		
 		Product product = null;
 		try {
